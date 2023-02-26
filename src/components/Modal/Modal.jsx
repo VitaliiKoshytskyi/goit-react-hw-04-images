@@ -13,7 +13,7 @@ const Modal = ({ closeModal, children }) => {
   useEffect(() => {
     document.body.addEventListener('keydown', handleClose);
     return () => document.body.addEventListener('keydown', handleClose);
-    
+     // eslint-disable-next-line
   }, [])
   
   
