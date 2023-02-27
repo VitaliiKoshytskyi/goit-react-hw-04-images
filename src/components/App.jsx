@@ -23,7 +23,7 @@ export const App = () => {
         setLoading(true);
         const { data } = await getImages(page, search);
         setTotalImages(data.total);
-        
+
         setImages(prevState => {
           return [...prevState, ...data.hits];
         });
